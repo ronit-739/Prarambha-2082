@@ -9,28 +9,28 @@ const noticesData: Notice[] = [
     id: '1',
     title: 'Welcome Program Date Announcement Coming Soon',
     content: 'The official date for the Prarambha  will be announced within the next two weeks. Stay tuned for updates!',
-    date: 'May 15, 2025',
+    date: 'May 25, 2026',
     priority: 'medium'
   },
   {
     id: '2',
     title: 'Call for Student Volunteers',
     content: 'We are looking for enthusiastic students to help organize and run Prarambha. If interested, please submit your application by May 8, 2025.',
-    date: 'May 4, 2025',
+    date: 'May 25, 2026',
     priority: 'high'
   },
   {
     id: '3',
     title: 'Sponsorship Opportunities Available',
     content: 'Organizations interested in sponsoring Prarambha can find details about various sponsorship packages on our website. Limited slots available.',
-    date: 'May 6, 2025',
+    date: 'March 1, 2026',
     priority: 'medium'
   },
   {
     id: '4',
     title: 'Event Committee Formation',
-    content: 'The organizing committee for Prarambha has been formed. Committee members will meet next week to finalize the event details.',
-    date: 'May 9, 2025',
+    content: 'The organizing committee for Prarambha 2082 has been formed. Committee members will meet next week to finalize the event details.',
+    date: 'March 1, 2026',
     priority: 'low'
   },
 ];

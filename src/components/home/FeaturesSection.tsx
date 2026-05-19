@@ -82,7 +82,7 @@ const FeaturesSection: React.FC = () => {
               className="bg-gray-50 dark:bg-gray-800 rounded-xl p-8 hover:shadow-md transition-shadow duration-300"
             >
               <div className="flex flex-col sm:flex-row items-start sm:items-center mb-4 gap-4">
-                <div className="w-12 h-12 rounded-lg flex items-center justify-center bg-indigo-100 dark:bg-indigo-900/30 text-indigo-600 dark:text-indigo-400">
+                <div className="w-12 h-12 rounded-lg flex items-center justify-center bg-orange-100 dark:bg-red-900/30 text-red-600 dark:text-red-400">
                   {feature.icon}
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 dark:text-white">

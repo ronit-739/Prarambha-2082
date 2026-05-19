@@ -45,10 +45,10 @@ const Navbar: React.FC = () => {
         <div className="flex items-center justify-between">
           <NavLink 
             to="/" 
-            className="text-xl font-bold tracking-tight text-indigo-600 dark:text-indigo-400"
+            className="text-xl font-bold tracking-tight text-red-600 dark:text-red-400"
           >
             <span className="inline-flex items-center gap-2">
-              <span className="font-semibold">Prarambha</span>
+              <span className="font-semibold">Prarambha 2k82</span>
   
             </span>
           </NavLink>
@@ -74,8 +74,8 @@ const Navbar: React.FC = () => {
                 className={({ isActive }) => clsx(
                   'px-4 py-2 mx-1 rounded-full font-medium transition-all duration-200 flex items-center gap-2',
                   isActive 
-                    ? 'text-indigo-700 dark:text-indigo-300 bg-indigo-50 dark:bg-indigo-900/30' 
-                    : 'text-gray-600 dark:text-gray-300 hover:text-indigo-600 hover:bg-indigo-50/50 dark:hover:text-indigo-300 dark:hover:bg-indigo-900/20'
+                    ? 'text-red-700 dark:text-red-300 bg-orange-50 dark:bg-red-900/30' 
+                    : 'text-gray-600 dark:text-gray-300 hover:text-red-600 hover:bg-orange-50/50 dark:hover:text-red-300 dark:hover:bg-red-900/20'
                 )}
               >
                 {item.icon}
@@ -106,7 +106,7 @@ const Navbar: React.FC = () => {
                   className={({ isActive }) => clsx(
                     'py-3 px-4 my-1 rounded-lg flex items-center gap-3 font-medium transition-colors',
                     isActive 
-                      ? 'bg-indigo-50 dark:bg-indigo-900/30 text-indigo-600 dark:text-indigo-300' 
+                      ? 'bg-orange-50 dark:bg-red-900/30 text-red-600 dark:text-red-300' 
                       : 'text-gray-600 dark:text-gray-300'
                   )}
                 >

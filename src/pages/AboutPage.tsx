@@ -32,7 +32,7 @@ const AboutPage: React.FC = () => {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
               <div className="absolute bottom-4 left-4 right-4 text-white">
-                <span className="px-4 py-2 bg-indigo-600/90 rounded-lg text-sm font-medium">
+                <span className="px-4 py-2 bg-red-600/90 rounded-lg text-sm font-medium">
                   Thapathali Campus, IOE
                 </span>
               </div>
@@ -43,7 +43,7 @@ const AboutPage: React.FC = () => {
             </h2>
             
             <p className="text-gray-700 dark:text-gray-300 mb-6 leading-relaxed">
-              <a href="https://doece.tcioe.edu.np/" className="text-indigo-600 dark:text-indigo-400 hover:underline font-medium">The Department of Electronics and Computer Engineering</a> (DOECE) at Thapathali Campus, 
+              <a href="https://doece.tcioe.edu.np/" className="text-red-600 dark:text-red-400 hover:underline font-medium">The Department of Electronics and Computer Engineering</a> (DOECE) at Thapathali Campus, 
               Institute of Engineering is one of the premier departments dedicated to providing 
               excellence in education in the fields of electronics, computing, and information technology.
             </p>
@@ -84,14 +84,14 @@ const AboutPage: React.FC = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className="bg-indigo-50 dark:bg-indigo-900/20 rounded-xl p-8 border border-indigo-100 dark:border-indigo-800"
+            className="bg-orange-50 dark:bg-red-900/20 rounded-xl p-8 border border-orange-100 dark:border-red-800"
           >
             <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mb-4">
               Our Vision & Mission
             </h2>
             
             <div className="mb-6">
-              <h3 className="text-lg font-medium text-indigo-700 dark:text-indigo-400 mb-2">
+              <h3 className="text-lg font-medium text-red-700 dark:text-red-400 mb-2">
                 Vision
               </h3>
               <p className="text-gray-700 dark:text-gray-300">
@@ -101,7 +101,7 @@ const AboutPage: React.FC = () => {
             </div>
             
             <div>
-              <h3 className="text-lg font-medium text-indigo-700 dark:text-indigo-400 mb-2">
+              <h3 className="text-lg font-medium text-red-700 dark:text-red-400 mb-2">
                 Mission
               </h3>
               <ul className="list-disc pl-6 text-gray-700 dark:text-gray-300 space-y-2">
