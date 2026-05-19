@@ -6,12 +6,12 @@ const features = [
   {
     icon: <Users className="w-6 h-6" />,
     title: "Know your Seniors",
-    description: "Get to know your seniors students personally"
+    description: "Break the ice, share laughs, and get to know your senior students beyond the classroom."
   },
   {
     icon: <PartyPopper className="w-6 h-6" />,
     title: "Have Fun",
-    description: "Enjoy a day full of exciting games, Food, and performances that will leave you smiling."
+    description: "Expect exciting games, delicious food, energetic performances, and nonstop entertainment throughout the day."
   },
   {
     icon: <Award className="w-6 h-6" />,
@@ -20,8 +20,8 @@ const features = [
   },
   {
     icon: <MessageSquareText className="w-6 h-6" />,
-    title: "Have more fun ",
-    description: "Stick around for surprises."
+    title: "And that's not all ",
+    description: "Just when you think the fun is over, Prarambha has a few surprises waiting for you. Stay till the end — the best moments are often the unexpected ones"
   }
 ];
 

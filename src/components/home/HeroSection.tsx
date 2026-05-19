@@ -130,7 +130,7 @@ const HeroSection: React.FC = () => {
               transition={{ delay: 0.7, duration: 0.5 }}
               className="absolute top-5 right-5 bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm rounded-lg px-4 py-2 shadow-lg"
             >
-              <span className="text-sm font-medium text-indigo-600 dark:text-indigo-400">2024 Edition</span>
+              <span className="text-sm font-medium text-indigo-600 dark:text-indigo-400">2025 Edition</span>
             </motion.div>
           </motion.div>
         </div>

@@ -43,7 +43,7 @@ const AboutPage: React.FC = () => {
             </h2>
             
             <p className="text-gray-700 dark:text-gray-300 mb-6 leading-relaxed">
-              The Department of Electronics and Computer Engineering (DOECE) at Thapathali Campus, 
+              <a href="https://doece.tcioe.edu.np/" className="text-indigo-600 dark:text-indigo-400 hover:underline font-medium">The Department of Electronics and Computer Engineering</a> (DOECE) at Thapathali Campus, 
               Institute of Engineering is one of the premier departments dedicated to providing 
               excellence in education in the fields of electronics, computing, and information technology.
             </p>
@@ -61,23 +61,22 @@ const AboutPage: React.FC = () => {
             </h2>
             
             <p className="text-gray-700 dark:text-gray-300 mb-6 leading-relaxed">
-              The Prarambha  is a flagship event organized by the seniors at DOECE to welcome new students 
-              into our academic community. This event serves as a platform for incoming students to:
-            </p>
+              Prarambha 2082 is the newest edition of the flagship fresher’s event organized by the seniors of DOECE at Thapathali Campus.
+               Designed to warmly welcome new students into the DOECE family, the event is all about connection, celebration, and creating unforgettable first memories on campus.</p>
             
             <ul className="list-disc pl-6 mb-6 text-gray-700 dark:text-gray-300 space-y-2">
-              <li>Familiarize themselves with the department's faculty and Seniors</li>
-              <li>Learn about Having Fun</li>
-              <li>Network with senior students and faculty members</li>
-              <li>Dance, Eat  till you can't</li>
-              <li>Participate in Fun activities and social events</li>
+              <li> Connect with seniors, faculty, and new friends</li>
+              <li>Enjoy games, music, performances, and nonstop fun</li>
+              <li>Eat, dance, laugh, and make unforgettable memories</li>
+              <li>Join exciting activities and social events</li>
+              <li>  Compete for the Mr. & Ms. Fresher titles</li>
+              <li> Experience the vibrant spirit of DOECE</li>
             </ul>
             
             <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
-              Prarambha  builds on the tradition of excellence while incorporating new elements 
-              to address the evolving needs of students in the dynamic fields of electronics and computer 
-              engineering. Through this event, we aim to instill a sense of belonging and community among 
-              our students, setting the foundation for a successful academic journey at DOECE , Thapatali Campus.
+             More than just a welcome program, Prarambha 2082 is a celebration of new beginnings. 
+             It aims to create a friendly and supportive environment where students can feel connected, confident,
+             and excited for their journey ahead at DOECE.
             </p>
           </motion.div>
           
@@ -96,8 +95,8 @@ const AboutPage: React.FC = () => {
                 Vision
               </h3>
               <p className="text-gray-700 dark:text-gray-300">
-                To be a center of excellence in electronics and computer engineering education, 
-                producing graduates who contribute meaningfully to technological advancement and innovation.
+              To be a leading center for electronics and computer engineering education, producing innovative graduates
+              who drive technological progress.
               </p>
             </div>
             
@@ -106,11 +105,10 @@ const AboutPage: React.FC = () => {
                 Mission
               </h3>
               <ul className="list-disc pl-6 text-gray-700 dark:text-gray-300 space-y-2">
-                <li>Provide quality education in electronics and computer engineering</li>
-                <li>Foster a culture of research and innovation</li>
-                <li>Develop industry partnerships to enhance practical learning</li>
-                <li>Empower students with technical and soft skills for career success</li>
-                <li>Contribute to technological solutions for societal challenges</li>
+                <li>Provide quality, hands-on engineering education</li>
+                <li>Encourage research and innovation</li>
+                <li>Build strong industry connections for real-world learning</li>
+                <li>Develop both technical and soft skills for success</li>
               </ul>
             </div>
           </motion.div>
