@@ -13,7 +13,7 @@ import NoticesPage from './pages/NoticesPage';
 function App() {
   return (
     <ThemeProvider>
-      <div className="min-h-screen bg-white dark:bg-gray-900 text-gray-900 dark:text-white">
+      <div className="min-h-screen bg-white dark:bg-black text-gray-900 dark:text-white">
         <Router>
           <Navbar />
           <main>

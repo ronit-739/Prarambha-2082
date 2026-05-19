@@ -131,7 +131,7 @@ const SchedulePage: React.FC = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.5 }}
-            className="bg-indigo-50 dark:bg-indigo-900/20 rounded-xl p-6 mt-12 border border-indigo-100 dark:border-indigo-800"
+            className="bg-orange-50 dark:bg-rose-900/20 rounded-xl p-6 mt-12 border border-orange-100 dark:border-rose-800"
           >
             <p className="text-center text-gray-700 dark:text-gray-300">
               <span className="font-medium">Note:</span> This schedule is tentative and subject to minor changes. 

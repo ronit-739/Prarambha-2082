@@ -71,7 +71,7 @@ const NoticesPage: React.FC = () => {
               className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${
                 filter === 'all' 
                   ? 'bg-gray-900 text-white dark:bg-white dark:text-gray-900' 
-                  : 'bg-gray-100 text-gray-700 hover:bg-gray-200 dark:bg-gray-800 dark:text-gray-300 dark:hover:bg-gray-700'
+                  : 'bg-gray-100 text-gray-700 hover:bg-gray-200 dark:bg-neutral-900 dark:text-gray-200 dark:hover:bg-neutral-800'
               }`}
             >
               All Notices
@@ -80,8 +80,8 @@ const NoticesPage: React.FC = () => {
               onClick={() => setFilter('high')}
               className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${
                 filter === 'high' 
-                  ? 'bg-red-600 text-white dark:bg-red-500 dark:text-white' 
-                  : 'bg-red-50 text-red-600 hover:bg-red-100 dark:bg-red-900/20 dark:text-red-400 dark:hover:bg-red-900/30'
+                  ? 'bg-rose-900 text-white dark:bg-rose-800 dark:text-white' 
+                  : 'bg-rose-50 text-rose-900 hover:bg-rose-100 dark:bg-rose-900/20 dark:text-rose-400 dark:hover:bg-rose-900/30'
               }`}
             >
               High Priority
@@ -100,8 +100,8 @@ const NoticesPage: React.FC = () => {
               onClick={() => setFilter('low')}
               className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${
                 filter === 'low' 
-                  ? 'bg-blue-600 text-white dark:bg-blue-500 dark:text-white' 
-                  : 'bg-blue-50 text-blue-600 hover:bg-blue-100 dark:bg-blue-900/20 dark:text-blue-400 dark:hover:bg-blue-900/30'
+                  ? 'bg-rose-900 text-white dark:bg-rose-800 dark:text-white' 
+                  : 'bg-orange-50 text-rose-900 hover:bg-orange-100 dark:bg-rose-900/20 dark:text-rose-400 dark:hover:bg-rose-900/30'
               }`}
             >
               Low Priority

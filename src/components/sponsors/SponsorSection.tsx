@@ -44,7 +44,7 @@ const sponsorData: Sponsor[] = [
 ];
 
 const tierColors = {
-  platinum: 'from-indigo-500 to-blue-400 dark:from-indigo-600 dark:to-blue-500',
+  platinum: 'from-rose-800 to-orange-400 dark:from-rose-900 dark:to-orange-500',
   gold: 'from-amber-500 to-yellow-400 dark:from-amber-600 dark:to-yellow-500',
   silver: 'from-gray-400 to-gray-300 dark:from-gray-500 dark:to-gray-400',
   bronze: 'from-amber-700 to-amber-600 dark:from-amber-800 dark:to-amber-700',
@@ -76,11 +76,11 @@ const SponsorCard: React.FC<{ sponsor: Sponsor }> = ({ sponsor }) => {
   return (
     <motion.div
       variants={item}
-      className="bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300"
+      className="bg-white dark:bg-neutral-900 rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300"
     >
       <div className={`h-2 bg-gradient-to-r ${tierColors[sponsor.tier]}`}></div>
       <div className="p-6">
-        <div className="h-40 flex items-center justify-center mb-4 bg-gray-50 dark:bg-gray-700/50 rounded-lg overflow-hidden">
+        <div className="h-40 flex items-center justify-center mb-4 bg-gray-50 dark:bg-neutral-800/50 rounded-lg overflow-hidden">
           <img 
             src={sponsor.logo} 
             alt={sponsor.name} 
@@ -99,7 +99,7 @@ const SponsorCard: React.FC<{ sponsor: Sponsor }> = ({ sponsor }) => {
               href={sponsor.website}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-sm text-indigo-600 dark:text-indigo-400 hover:underline block"
+              className="text-sm text-rose-900 dark:text-rose-400 hover:underline block"
             >
               Visit Website
             </a>
@@ -120,7 +120,7 @@ const SponsorSection: React.FC<SponsorSectionProps> = ({ showAll = false }) => {
     : sponsorData.filter(s => s.tier === 'platinum' || s.tier === 'gold');
 
   return (
-    <section className="py-20 bg-gray-50 dark:bg-gray-900">
+    <section className="py-20 bg-gray-50 dark:bg-black">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

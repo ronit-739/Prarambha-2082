@@ -7,8 +7,11 @@ import { useEffect, useState } from 'react';
 
 const heroImages = [
   "/bctBoys.jpg",
+  "/bctGirls.jpeg",
+  "/bctSenior.jpeg",
   "/bctGroup.jpg",
-  
+
+
 ];
 
 const HeroSection: React.FC = () => {
@@ -22,11 +25,11 @@ const HeroSection: React.FC = () => {
     return () => clearInterval(interval);
   }, []);
   return (
-    <div className="relative overflow-hidden bg-white dark:bg-gray-900 min-h-screen flex items-center">
-      <div className="absolute inset-0 bg-gradient-to-br from-orange-50/80 to-red-50/80 dark:from-red-950/30 dark:to-gray-900 z-0"></div>
+    <div className="relative overflow-hidden bg-white dark:bg-black min-h-screen flex items-center">
+      <div className="absolute inset-0 bg-gradient-to-br from-orange-50/80 to-rose-900/80 dark:from-rose-950/30 dark:to-gray-900 z-0"></div>
       
       <div className="absolute top-20 right-0 w-72 h-72 bg-pink-300/10 dark:bg-pink-700/10 rounded-full filter blur-3xl"></div>
-      <div className="absolute bottom-10 left-10 w-80 h-80 bg-red-300/10 dark:bg-red-700/10 rounded-full filter blur-3xl"></div>
+      <div className="absolute bottom-10 left-10 w-80 h-80 bg-rose-900/10 dark:bg-rose-700/10 rounded-full filter blur-3xl"></div>
       
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-10 z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -41,7 +44,7 @@ const HeroSection: React.FC = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.1, duration: 0.5 }}
-              className="inline-block px-4 py-1.5 mb-6 text-sm font-medium text-red-700 dark:text-red-300 bg-orange-50 dark:bg-red-900/30 rounded-full"
+              className="inline-block px-4 py-1.5 mb-6 text-sm font-medium text-rose-900 dark:text-rose-300 bg-orange-50 dark:bg-rose-900/30 rounded-full"
             >
               <span className="flex items-center">
                 <CalendarDays className="w-4 h-4 mr-2" />
@@ -56,11 +59,11 @@ const HeroSection: React.FC = () => {
               className="text-4xl sm:text-5xl md:text-6xl font-bold text-gray-900 dark:text-white leading-tight mb-6"
             >
               <span className="block">Your First Step</span>
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-orange-500 dark:from-red-400 dark:to-orange-300">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-rose-900 to-orange-500 dark:from-rose-400 dark:to-orange-300">
               Prarambha 
               </span>
               <br></br>
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-orange-500 dark:from-red-400 dark:to-orange-300">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-rose-900 to-orange-500 dark:from-rose-400 dark:to-orange-300">
                2k82
               </span>
             </motion.h1>
@@ -82,14 +85,14 @@ const HeroSection: React.FC = () => {
             >
               <Link 
                 to="/schedule" 
-                className="px-6 py-3 bg-red-600 text-white font-medium rounded-lg shadow-md hover:bg-red-700 transition-colors duration-200 flex items-center group"
+                className="px-6 py-3 bg-rose-900 text-white font-medium rounded-lg shadow-md hover:bg-rose-950 transition-colors duration-200 flex items-center group"
               >
                 View Schedule
                 <ArrowRight className="ml-2 w-4 h-4 transition-transform duration-200 group-hover:translate-x-1" />
               </Link>
               <Link 
                 to="/about" 
-                className="px-6 py-3 bg-white dark:bg-gray-800 text-red-600 dark:text-red-400 font-medium border border-orange-200 dark:border-gray-700 rounded-lg hover:bg-orange-50 dark:hover:bg-gray-700 transition-colors duration-200"
+                className="px-6 py-3 bg-white dark:bg-neutral-900 text-rose-900 dark:text-rose-400 font-medium border border-orange-200 dark:border-neutral-800 rounded-lg hover:bg-orange-50 dark:hover:bg-neutral-800 transition-colors duration-200"
               >
                 Learn More
               </Link>
@@ -104,7 +107,7 @@ const HeroSection: React.FC = () => {
             className="order-1 lg:order-2 relative"
           >
             <div className="relative rounded-2xl overflow-hidden shadow-2xl">
-              <div className="absolute inset-0 bg-gradient-to-tr from-red-500/20 to-transparent z-10"></div>
+              <div className="absolute inset-0 bg-gradient-to-tr from-rose-900/20 to-transparent z-10"></div>
               <img 
                 src={heroImages[currentImageIndex]} 
                 alt="DOECE Welcome Program"
@@ -117,9 +120,9 @@ const HeroSection: React.FC = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.6, duration: 0.5 }}
-              className="absolute -bottom-5 -left-5 bg-white dark:bg-gray-800 rounded-lg px-4 py-2 shadow-lg flex items-center space-x-2"
+              className="absolute -bottom-5 -left-5 bg-white dark:bg-neutral-900 rounded-lg px-4 py-2 shadow-lg flex items-center space-x-2"
             >
-              <span className="w-3 h-3 bg-green-500 rounded-full"></span>
+              <span className="w-3 h-3 bg-black rounded-full"></span>
               <span className="text-sm font-medium text-gray-900 dark:text-white">Join Us</span>
             </motion.div>
             
@@ -127,9 +130,9 @@ const HeroSection: React.FC = () => {
               initial={{ opacity: 0, y: -20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.7, duration: 0.5 }}
-              className="absolute top-5 right-5 bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm rounded-lg px-4 py-2 shadow-lg"
+              className="absolute top-5 right-5 bg-white/80 dark:bg-neutral-900/80 backdrop-blur-sm rounded-lg px-4 py-2 shadow-lg"
             >
-              <span className="text-sm font-medium text-red-600 dark:text-red-400">2025 Edition</span>
+              <span className="text-sm font-medium text-rose-900 dark:text-rose-400">2025 Edition</span>
             </motion.div>
           </motion.div>
         </div>

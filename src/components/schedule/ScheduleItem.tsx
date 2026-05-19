@@ -17,7 +17,7 @@ const ScheduleItem: React.FC<ScheduleItemProps> = ({ item, index, isLast }) => {
     <div className="relative">
       {/* Timeline connector */}
       {!isLast && (
-        <div className="absolute top-6 bottom-0 left-5 w-0.5 bg-indigo-200 dark:bg-indigo-800"></div>
+        <div className="absolute top-6 bottom-0 left-5 w-0.5 bg-orange-200 dark:bg-orange-800"></div>
       )}
       
       <motion.div 
@@ -32,7 +32,7 @@ const ScheduleItem: React.FC<ScheduleItemProps> = ({ item, index, isLast }) => {
           <div className={clsx(
             "w-10 h-10 rounded-full flex items-center justify-center text-white",
             isEven 
-              ? "bg-indigo-600 dark:bg-indigo-500" 
+              ? "bg-rose-900 dark:bg-rose-800" 
               : "bg-pink-600 dark:bg-pink-500"
           )}>
             <Clock className="w-5 h-5" />
@@ -41,15 +41,15 @@ const ScheduleItem: React.FC<ScheduleItemProps> = ({ item, index, isLast }) => {
         
         {/* Content */}
         <div className={clsx(
-          "flex-1 bg-white dark:bg-gray-800 rounded-xl p-6 shadow-md",
+          "flex-1 bg-white dark:bg-neutral-900 rounded-xl p-6 shadow-md",
           isEven 
-            ? "border-l-4 border-indigo-600 dark:border-indigo-500" 
+            ? "border-l-4 border-rose-900 dark:border-rose-800" 
             : "border-l-4 border-pink-600 dark:border-pink-500"
         )}>
           <span className={clsx(
             "inline-block px-3 py-1 text-sm font-medium rounded-full mb-3",
             isEven 
-              ? "text-indigo-700 bg-indigo-50 dark:text-indigo-300 dark:bg-indigo-900/30" 
+              ? "text-rose-950 bg-orange-50 dark:text-rose-300 dark:bg-rose-900/30" 
               : "text-pink-700 bg-pink-50 dark:text-pink-300 dark:bg-pink-900/30"
           )}>
             {item.time}

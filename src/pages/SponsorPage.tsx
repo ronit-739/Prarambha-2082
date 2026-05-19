@@ -49,7 +49,7 @@ const SponsorPage: React.FC = () => {
           
           <a 
             href="mailto:doece@tcioe.edu.np" 
-            className="inline-block px-6 py-3 bg-indigo-600 text-white font-medium rounded-lg shadow-md hover:bg-indigo-700 transition-colors duration-200"
+            className="inline-block px-6 py-3 bg-rose-900 text-white font-medium rounded-lg shadow-md hover:bg-rose-950 transition-colors duration-200"
           >
             Contact Us About Sponsorship
           </a>

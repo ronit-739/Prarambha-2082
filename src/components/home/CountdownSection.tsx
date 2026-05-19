@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 
 // Placeholder date - to be updated once exact date is known
-const eventDate = new Date('2025-04-15T09:00:00');
+const eventDate = new Date('2026-06-29T09:00:00');
 
 interface TimeLeft {
   days: number;
@@ -57,9 +57,9 @@ const CountdownSection: React.FC = () => {
   ];
 
   return (
-    <section className="py-20 bg-gradient-to-b from-indigo-50 to-white dark:from-gray-900 dark:to-gray-800 relative overflow-hidden">
+    <section className="py-20 bg-gradient-to-b from-orange-50 to-white dark:from-black dark:to-neutral-900 relative overflow-hidden">
       {/* Decorative elements */}
-      <div className="absolute top-0 right-0 w-80 h-80 bg-indigo-400/5 dark:bg-indigo-400/10 rounded-full -translate-y-1/2 translate-x-1/4"></div>
+      <div className="absolute top-0 right-0 w-80 h-80 bg-rose-400/5 dark:bg-rose-400/10 rounded-full -translate-y-1/2 translate-x-1/4"></div>
       <div className="absolute bottom-0 left-0 w-64 h-64 bg-pink-400/5 dark:bg-pink-400/10 rounded-full translate-y-1/2 -translate-x-1/4"></div>
       
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -86,11 +86,11 @@ const CountdownSection: React.FC = () => {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true, margin: "-100px" }}
               transition={{ duration: 0.4, delay: index * 0.1 }}
-              className="bg-white dark:bg-gray-800 rounded-xl shadow-md p-6 text-center relative overflow-hidden"
+              className="bg-white dark:bg-neutral-900 rounded-xl shadow-md p-6 text-center relative overflow-hidden"
             >
-              <div className="absolute inset-0 bg-gradient-to-br from-transparent to-indigo-50 dark:to-indigo-950/30"></div>
+              <div className="absolute inset-0 bg-gradient-to-br from-transparent to-orange-50 dark:to-rose-950/30"></div>
               <div className="relative z-10">
-                <span className="block text-4xl sm:text-5xl font-bold text-indigo-600 dark:text-indigo-400 mb-2">
+                <span className="block text-4xl sm:text-5xl font-bold text-rose-900 dark:text-rose-400 mb-2">
                   {item.value.toString().padStart(2, '0')}
                 </span>
                 <span className="text-sm sm:text-base text-gray-500 dark:text-gray-400 font-medium">
@@ -110,7 +110,7 @@ const CountdownSection: React.FC = () => {
           >
             <p className="text-lg text-gray-600 dark:text-gray-300">
               Stay connected for the official announcement of the event date. Check the{' '}
-              <a href="/notices" className="text-indigo-600 dark:text-indigo-400 font-medium hover:underline">
+              <a href="/notices" className="text-rose-900 dark:text-rose-400 font-medium hover:underline">
                 notices
               </a>{' '}
               page regularly for updates.

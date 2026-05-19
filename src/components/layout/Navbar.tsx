@@ -37,7 +37,7 @@ const Navbar: React.FC = () => {
       className={clsx(
         'fixed top-0 left-0 w-full z-50 transition-all duration-300 ease-in-out',
         scrolled 
-          ? 'py-3 bg-white/90 dark:bg-gray-900/90 backdrop-blur-md shadow-sm' 
+          ? 'py-3 bg-white/90 dark:bg-neutral-900/60 backdrop-blur-md shadow-sm' 
           : 'py-5 bg-transparent'
       )}
     >
@@ -45,10 +45,10 @@ const Navbar: React.FC = () => {
         <div className="flex items-center justify-between">
           <NavLink 
             to="/" 
-            className="text-xl font-bold tracking-tight text-red-600 dark:text-red-400"
+            className="text-xl font-bold tracking-tight text-rose-900 dark:text-rose-400"
           >
             <span className="inline-flex items-center gap-2">
-              <span className="font-semibold">Prarambha 2k82</span>
+              <span className="font-semibold">Prarambha 2082</span>
   
             </span>
           </NavLink>
@@ -74,8 +74,8 @@ const Navbar: React.FC = () => {
                 className={({ isActive }) => clsx(
                   'px-4 py-2 mx-1 rounded-full font-medium transition-all duration-200 flex items-center gap-2',
                   isActive 
-                    ? 'text-red-700 dark:text-red-300 bg-orange-50 dark:bg-red-900/30' 
-                    : 'text-gray-600 dark:text-gray-300 hover:text-red-600 hover:bg-orange-50/50 dark:hover:text-red-300 dark:hover:bg-red-900/20'
+                    ? 'text-rose-950 dark:text-rose-300 bg-orange-50 dark:bg-rose-900/30' 
+                    : 'text-gray-600 dark:text-gray-300 hover:text-rose-900 hover:bg-orange-50/50 dark:hover:text-rose-300 dark:hover:bg-rose-900/20'
                 )}
               >
                 {item.icon}
@@ -96,7 +96,7 @@ const Navbar: React.FC = () => {
             animate={{ height: 'auto', opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
             transition={{ duration: 0.3, ease: 'easeInOut' }}
-            className="lg:hidden bg-white dark:bg-gray-900 border-t border-gray-100 dark:border-gray-800 shadow-lg"
+            className="lg:hidden bg-white dark:bg-black border-t border-gray-100 dark:border-neutral-800 shadow-lg"
           >
             <nav className="container mx-auto px-4 py-4 flex flex-col">
               {navItems.map((item) => (
@@ -106,7 +106,7 @@ const Navbar: React.FC = () => {
                   className={({ isActive }) => clsx(
                     'py-3 px-4 my-1 rounded-lg flex items-center gap-3 font-medium transition-colors',
                     isActive 
-                      ? 'bg-orange-50 dark:bg-red-900/30 text-red-600 dark:text-red-300' 
+                      ? 'bg-orange-50 dark:bg-rose-900/30 text-rose-900 dark:text-rose-300' 
                       : 'text-gray-600 dark:text-gray-300'
                   )}
                 >
