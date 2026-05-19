@@ -1,9 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Mail, MapPin, Phone } from 'lucide-react';
 
 const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
+  const [copied, setCopied] = useState(false);
+
+  const copyToClipboard = (text: string) => {
+    navigator.clipboard.writeText(text);
+    setCopied(true);
+    setTimeout(() => setCopied(false), 2000);
+  };
 
   return (
     <footer className="bg-gray-50 dark:bg-black border-t border-gray-200 dark:border-neutral-800">
@@ -67,18 +74,23 @@ const Footer: React.FC = () => {
             <ul className="space-y-4">
               <li className="flex items-start">
                 <MapPin className="w-5 h-5 text-rose-900 dark:text-rose-400 mt-0.5 mr-3 flex-shrink-0" />
-                <span className="text-gray-600 dark:text-gray-400">
+                <a href="https://tcioe.edu.np/ " className="text-gray-600 dark:text-gray-400 hover:text-rose-900 dark:hover:text-rose-400 transition-colors">
                   Thapathali Campus, Institute of Engineering<br />
                   Kathmandu, Nepal
-                </span>
+                </a>
               </li>
               <li className="flex items-center">
                 <Phone className="w-5 h-5 text-rose-900 dark:text-rose-400 mr-3 flex-shrink-0" />
-                <span className="text-gray-600 dark:text-gray-400">+977-9867216060</span>
+                <button 
+                  onClick={() => copyToClipboard('+977-9821799650')}
+                  className="text-gray-600 dark:text-gray-400 hover:text-rose-900 dark:hover:text-rose-400 transition-colors cursor-pointer"
+                >
+                  {copied ? 'Copied!' : '+977-9821799650'}
+                </button>
               </li>
               <li className="flex items-center">
                 <Mail className="w-5 h-5 text-rose-900 dark:text-rose-400 mr-3 flex-shrink-0" />
-                <span className="text-gray-600 dark:text-gray-400">doece@tcioe.edu.np</span>
+                <a href=" mailto:prarambha.tcioe@gmail.com" className="text-gray-600 dark:text-gray-400 hover:text-rose-900 dark:hover:text-rose-400 transition-colors">prarambha.tcioe@gmail.com</a>
               </li>
             </ul>
           </div>

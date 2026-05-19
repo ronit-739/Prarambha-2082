@@ -11,21 +11,21 @@ interface NoticeCardProps {
 const priorityConfig = {
   high: {
     icon: <AlertCircle className="w-5 h-5" />,
-    bgColor: 'bg-rose-50 dark:bg-rose-900/20',
-    textColor: 'text-rose-900 dark:text-rose-400',
-    borderColor: 'border-rose-200 dark:border-rose-800',
+    bgColor: 'bg-red-50 dark:bg-red-900/20',
+    textColor: 'text-red-900 dark:text-red-400',
+    borderColor: 'border-red-200 dark:border-red-800',
   },
   medium: {
     icon: <AlertTriangle className="w-5 h-5" />,
-    bgColor: 'bg-amber-50 dark:bg-amber-900/20',
-    textColor: 'text-amber-600 dark:text-amber-400',
-    borderColor: 'border-amber-200 dark:border-amber-800',
+    bgColor: 'bg-yellow-50 dark:bg-yellow-900/20',
+    textColor: 'text-yellow-700 dark:text-yellow-400',
+    borderColor: 'border-yellow-200 dark:border-yellow-800',
   },
   low: {
     icon: <Info className="w-5 h-5" />,
-    bgColor: 'bg-orange-50 dark:bg-orange-900/20',
-    textColor: 'text-orange-600 dark:text-orange-400',
-    borderColor: 'border-orange-200 dark:border-orange-800',
+    bgColor: 'bg-gray-100 dark:bg-gray-900/30',
+    textColor: 'text-gray-700 dark:text-gray-400',
+    borderColor: 'border-gray-300 dark:border-gray-700',
   },
 };
 

@@ -12,22 +12,30 @@ const noticesData: Notice[] = [
     date: 'May 25, 2026',
     priority: 'medium'
   },
-  {
+   {
     id: '2',
+    title: 'Venue Confirmation',
+    content: 'Event venue details will be shared shortly through official notices',
+    date: 'May 25, 2026',
+    priority: 'low'
+  },
+
+  {
+    id: '3',
     title: 'Call for Student Volunteers',
     content: 'We are looking for enthusiastic students to help organize and run Prarambha. If interested, please submit your application by May 8, 2025.',
     date: 'May 25, 2026',
     priority: 'high'
   },
   {
-    id: '3',
+    id: '4',
     title: 'Sponsorship Opportunities Available',
     content: 'Organizations interested in sponsoring Prarambha can find details about various sponsorship packages on our website. Limited slots available.',
     date: 'March 1, 2026',
     priority: 'medium'
   },
   {
-    id: '4',
+    id: '5',
     title: 'Event Committee Formation',
     content: 'The organizing committee for Prarambha 2082 has been formed. Committee members will meet next week to finalize the event details.',
     date: 'March 1, 2026',
@@ -90,8 +98,8 @@ const NoticesPage: React.FC = () => {
               onClick={() => setFilter('medium')}
               className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${
                 filter === 'medium' 
-                  ? 'bg-amber-600 text-white dark:bg-amber-500 dark:text-white' 
-                  : 'bg-amber-50 text-amber-600 hover:bg-amber-100 dark:bg-amber-900/20 dark:text-amber-400 dark:hover:bg-amber-900/30'
+                  ? 'bg-yellow-600 text-white dark:bg-yellow-500 dark:text-white' 
+                  : 'bg-yellow-50 text-yellow-700 hover:bg-yellow-100 dark:bg-yellow-900/20 dark:text-yellow-400 dark:hover:bg-yellow-900/30'
               }`}
             >
               Medium Priority
@@ -100,8 +108,8 @@ const NoticesPage: React.FC = () => {
               onClick={() => setFilter('low')}
               className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${
                 filter === 'low' 
-                  ? 'bg-rose-900 text-white dark:bg-rose-800 dark:text-white' 
-                  : 'bg-orange-50 text-rose-900 hover:bg-orange-100 dark:bg-rose-900/20 dark:text-rose-400 dark:hover:bg-rose-900/30'
+                  ? 'bg-gray-600 text-white dark:bg-gray-700 dark:text-white' 
+                  : 'bg-gray-100 text-gray-700 hover:bg-gray-200 dark:bg-gray-900/30 dark:text-gray-400 dark:hover:bg-gray-900/50'
               }`}
             >
               Low Priority
