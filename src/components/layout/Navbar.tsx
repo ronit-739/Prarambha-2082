@@ -29,6 +29,18 @@ const Navbar: React.FC = () => {
   }, []);
 
   useEffect(() => {
+    const handleResize = () => {
+      // Close menu when viewport becomes large (lg breakpoint = 1024px)
+      if (window.innerWidth >= 1024) {
+        setIsOpen(false);
+      }
+    };
+
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+  useEffect(() => {
     
     setIsOpen(false);
   }, [location]);
