@@ -9,9 +9,25 @@ import SponsorPage from './pages/SponsorPage';
 import SchedulePage from './pages/SchedulePage';
 import NoticesPage from './pages/NoticesPage';
 import ArchivesPage from './pages/ArchivesPage';
+import { useEffect } from 'react';
 
 
 function App() {
+  useEffect(() => {
+    // Force layout recalculation when viewport changes
+    const handleViewportChange = () => {
+      window.dispatchEvent(new Event('resize'));
+    };
+
+    window.addEventListener('orientationchange', handleViewportChange);
+    window.addEventListener('resize', handleViewportChange);
+
+    return () => {
+      window.removeEventListener('orientationchange', handleViewportChange);
+      window.removeEventListener('resize', handleViewportChange);
+    };
+  }, []);
+
   return (
     <ThemeProvider>
       <div className="min-h-screen bg-white dark:bg-black text-gray-900 dark:text-white">
