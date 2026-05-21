@@ -113,6 +113,7 @@ const SchedulePage: React.FC = () => {
             </h1>
             <p className="text-lg text-gray-600 dark:text-gray-300">
               Here's what to expect during the Prarambha. The exact date will be announced soon.
+              (It needs to be updated)
             </p>
           </motion.div>
           

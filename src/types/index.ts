@@ -22,3 +22,13 @@ export type Sponsor = {
   logo: string;
   website?: string;
 };
+
+export type Video = {
+  id: string;
+  title: string;
+  description: string;
+  thumbnailUrl: string;
+  videoUrl: string;
+  date: string;
+  duration?: string;
+};

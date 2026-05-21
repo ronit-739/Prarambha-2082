@@ -1,4 +1,3 @@
-import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion';
 import { ThemeProvider } from './context/ThemeContext';
@@ -9,6 +8,8 @@ import AboutPage from './pages/AboutPage';
 import SponsorPage from './pages/SponsorPage';
 import SchedulePage from './pages/SchedulePage';
 import NoticesPage from './pages/NoticesPage';
+import ArchivesPage from './pages/ArchivesPage';
+
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
                 <Route path="/sponsor" element={<SponsorPage />} />
                 <Route path="/schedule" element={<SchedulePage />} />
                 <Route path="/notices" element={<NoticesPage />} />
+                <Route path="/archives" element={<ArchivesPage />} />
               </Routes>
             </AnimatePresence>
           </main>

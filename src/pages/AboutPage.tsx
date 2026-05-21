@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import PageTransition from '../components/layout/PageTransition';
 
-const aboutImage = "/depart.webp";
+const aboutImage = "photos/depart.webp";
 
 const AboutPage: React.FC = () => {
   return (

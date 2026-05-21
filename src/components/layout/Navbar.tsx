@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
-import { Menu, X, Calendar, Info, Home, Bell, Users } from 'lucide-react';
+import { Menu, X, Calendar, Info, Home, Bell, Users, Video } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import ThemeToggle from '../ui/ThemeToggle';
 import clsx from 'clsx';
@@ -11,6 +11,7 @@ const navItems = [
   { path: '/sponsor', label: 'Sponsors', icon: <Users className="w-5 h-5" /> },
   { path: '/schedule', label: 'Schedule', icon: <Calendar className="w-5 h-5" /> },
   { path: '/notices', label: 'Notices', icon: <Bell className="w-5 h-5" /> },
+  { path: '/Archives', label: 'Archives', icon: <Video className="w-5 h-5" /> },
 ];
 
 const Navbar: React.FC = () => {

@@ -6,11 +6,13 @@ import { useEffect, useState } from 'react';
 
 
 const heroImages = [
-  "/bctBoys.jpg",
-  "/bctGirls.jpeg",
-  "/bctSenior.jpeg",
-  "/bctGroup.jpg",
-
+  "/photos/bctBoys.jpg",
+  "/photos/bctGirls.jpeg",
+  "/photos/beiGroup.jpg",
+  "/photos/bctGroup.jpg",
+  "/photos/beiSenior.jpeg",
+  "/photos/bctSenior.jpeg",
+  
 
 ];
 
