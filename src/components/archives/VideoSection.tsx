@@ -58,7 +58,7 @@ const VideoSection: React.FC<VideoSectionProps> = ({ videos }) => {
           initial="hidden"
           whileInView="show"
           viewport={{ once: true, margin: "-100px" }}
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8"
         >
           {videos.map((video) => (
             <motion.div
@@ -121,19 +121,19 @@ const VideoSection: React.FC<VideoSectionProps> = ({ videos }) => {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             onClick={() => setSelectedVideo(null)}
-            className="fixed inset-0 bg-black/80 z-50 flex items-center justify-center p-4"
+            className="fixed inset-0 bg-black/80 z-50 flex items-center justify-center p-2 sm:p-4"
           >
             <motion.div
               initial={{ scale: 0.9, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               exit={{ scale: 0.9, opacity: 0 }}
               onClick={(e) => e.stopPropagation()}
-              className="w-full max-w-4xl bg-black rounded-lg overflow-hidden"
+              className="relative w-full max-w-sm bg-black rounded-lg overflow-hidden flex flex-col max-h-[90vh]"
             >
               {/* Close Button */}
               <button
                 onClick={() => setSelectedVideo(null)}
-                className="absolute top-4 right-4 text-white bg-black/50 hover:bg-black/75 rounded-full p-2 z-10"
+                className="absolute top-2 right-2 sm:top-4 sm:right-4 text-white bg-black/50 hover:bg-black/75 rounded-full p-2 z-10"
               >
                 <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
@@ -141,11 +141,11 @@ const VideoSection: React.FC<VideoSectionProps> = ({ videos }) => {
               </button>
 
               {/* Video Container */}
-              <div className="relative w-full bg-black aspect-video">
+              <div className="relative w-full bg-black flex-1 flex items-center justify-center overflow-hidden">
                 <video
                   src={selectedVideo.videoUrl}
                   title={selectedVideo.title}
-                  className="w-full h-full"
+                  className="w-full h-full object-contain"
                   controls
                   autoPlay
                   controlsList="nodownload"
@@ -153,8 +153,8 @@ const VideoSection: React.FC<VideoSectionProps> = ({ videos }) => {
               </div>
 
               {/* Video Details */}
-              <div className="p-6 text-white">
-                <h2 className="text-2xl font-bold">{selectedVideo.title}</h2>
+              <div className="p-4 sm:p-6 text-white flex-shrink-0">
+                <h2 className="text-xl sm:text-2xl font-bold line-clamp-2">{selectedVideo.title}</h2>
               </div>
             </motion.div>
           </motion.div>

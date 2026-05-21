@@ -39,7 +39,7 @@ const sampleVideos: Video[] = [
   {
     id: '5',
     title: 'Posing With Glasses BCT edition',
-    description: 'Kala CHasmaaa',
+    description: 'Kala Chasmaaa',
     thumbnailUrl: '/photos/Kushal.jpg',
     videoUrl: '/videos/KalaChasma.mp4',
     date: '2024-07-06',
@@ -47,7 +47,7 @@ const sampleVideos: Video[] = [
   },
   {
     id: '6',
-    title: 'Wowwwww Momonets',
+    title: 'Wowwwww Moments',
     description: 'Just Shouting Out loud With Seniors',
     thumbnailUrl: '/photos/bctSenior.jpeg',
     videoUrl: '/videos/photo-montage.mp4',
