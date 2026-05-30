@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 
 // Placeholder date - to be updated once exact date is known
-const eventDate = new Date('2026-06-29T09:00:00');
+const eventDate = new Date('2026-06-19T09:00:00');
 
 interface TimeLeft {
   days: number;
