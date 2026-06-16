@@ -5,18 +5,18 @@ import { Sponsor } from '../../types';
 const sponsorData: Sponsor[] = [
   {
     id: '1',
-    name: 'Place Available',
+    name: 'EvoStore',
     tier: 'platinum',
-    logo: '/sponsor/logo-placeholder-image.png',
-    website: 'https://example.com'
+    logo: '/sponsor/EvoStore.jpg',
+    website: 'https://evostore.com.np/'
   },
   {
     id: '2',
-    name: 'Place Available',
+    name: 'ECAST',
     tier: 'gold',
-    logo: '/sponsor/logo-placeholder-image.png',
-    website: 'https://example.com'
-  },
+    logo: '/sponsor/ecast.png',
+    website: 'https://ecast.tcioe.edu.np/'
+  }/*,
   {
     id: '3',
     name: 'Place Available',
@@ -40,7 +40,7 @@ const sponsorData: Sponsor[] = [
     name: 'Place Available',
     tier: 'bronze',
     logo: '/sponsor/logo-placeholder-image.png'
-  },
+  },*/
 ];
 
 const tierColors = {
@@ -84,13 +84,26 @@ const SponsorCard: React.FC<{ sponsor: Sponsor }> = ({ sponsor }) => {
           <img 
             src={sponsor.logo} 
             alt={sponsor.name} 
+            
             className="max-h-32 max-w-full object-contain"
           />
         </div>
         <div className="text-center">
           <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-1">
             {sponsor.name}
+                  {sponsor.name === 'EvoStore' && (
+  <p className="text-sm text-gray-600 dark:text-gray-300 mb-3">
+    Title sponser
+  </p>
+)}
+            {sponsor.name === 'ECAST' && (
+  <p className="text-sm text-gray-600 dark:text-gray-300 mb-3">
+    Community Partner
+  </p>
+)}
+            
           </h3>
+          
           <span className="inline-block px-3 py-1 text-xs font-medium rounded-full capitalize text-white bg-gradient-to-r mb-3 ${tierColors[sponsor.tier]}">
             {sponsor.tier} Sponsor
           </span>
